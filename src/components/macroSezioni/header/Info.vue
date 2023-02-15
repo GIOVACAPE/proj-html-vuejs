@@ -25,7 +25,7 @@ export default {
                 </a>
             </li>
         </ul>
-        <ul class="d-flez justify-content-between">
+        <ul class="d-flex justify-content-between">
             <li> <a href="#"></a><i class="fa-brands fa-facebook-messenger"></i></li>
             <li> <a href="#"></a><i class="fa-brands fa-twitter"></i></li>
             <li> <a href="#"></a><i class="fa-brands fa-vimeo-v"></i></li>
