@@ -29,6 +29,7 @@ export default {
     width: calc(100% / 5);
     height: 55vh;
     border: solid 10px #232a5c;
+    
 
     img {
         max-width: 300px;

@@ -10,10 +10,10 @@ export default {
             section: 'GAMER T-SHIRT`S',
             title: 'EXPLORE OUR PRODUCTS',
             items: [
-                { img: '01 (1)', name: 'BLACK T-SHIRT HERE', price: '$380.00' },
-                { img: '02 (1)', name: 'GREEN T-SHIRT HERE', price: '$380.00' },
-                { img: '03 (2)', name: 'YELLOW T-SHIRT HERE', price: '$380.00' },
-                { img: '04 (1)', name: 'BLUE T-SHIRT HERE', price: '$380.00' }
+                { img: 'toro', name: 'PRIMA MAGLIA', price: '$380.00' },
+                { img: 'toro 2', name: 'SECONDA MAGLIA', price: '$380.00' },
+                { img: 'toro 3', name: 'TERZA MAGLIA', price: '$380.00' },
+                { img: 'toro 4', name: 'MAGLIA PORTIERE', price: '$380.00' }
             ]
         }
     }
