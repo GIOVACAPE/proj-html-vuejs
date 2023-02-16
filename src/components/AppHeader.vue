@@ -1,25 +1,24 @@
-<script >
-import Info from './macroSezioni/header/Info.vue';
+<script>
+import InfoHeader from './macroSezioni/header/InfoHeader.vue';
 import MainHeader from './macroSezioni/header/MainHeader.vue';
-import Jumbo from './macroSezioni/header/Jumbo.vue';
+import JumboHeader from './macroSezioni/header/JumboHeader.vue';
 export default {
     name: 'AppHeader',
-    components: { Info, MainHeader, Jumbo }
+    components: { InfoHeader, MainHeader, JumboHeader }
 }
-
 </script>
 
 <template>
     <div class="custom-bgi">
         <div class="container">
-            <info></info>
+            <info-header></info-header>
             <main-header></main-header>
-            <jumbo></jumbo>
+            <jumbo-header></jumbo-header>
         </div>
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .custom-bgi {
     background-image: url('imgs/bg.jpg');
     background-position: center;

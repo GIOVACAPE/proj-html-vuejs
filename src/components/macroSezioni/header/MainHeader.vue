@@ -1,21 +1,21 @@
-<script >
-import GamerLogo from '../../Microsezioni/logo/GamerLogo.vue'
-import Bianco from '../../Microsezioni/bottoni/Bianco.vue';
-import Rosa from '../../Microsezioni/bottoni/Rosa.vue';
+<script>
+import GamerLogo from '../../utilities/GamerLogo.vue';
+import WhiteButton from '../../utilities/WhiteButton.vue';
+import PinkButton from '../../utilities/PinkButton.vue';
 export default {
     name: 'MainHeader',
-    components: { GamerLogo, Bianco, Rosa },
+    components: { GamerLogo, WhiteButton, PinkButton },
     data() {
         return {
             voice: [
                 { url: '#', text: 'HOME' },
                 { url: '#', text: 'FEATURES +' },
                 { url: '#', text: 'ACHIEVEMENT' },
-                { url: '#', text: 'BLOG +' },
+                { url: '#', text: 'BLOG+' },
                 { url: '#', text: 'CONTACT' },
             ],
             textWhite: 'LOG IN',
-            textPink: 'SIGN UP'
+            textPink: 'SING UP'
         }
     }
 }
@@ -29,27 +29,25 @@ export default {
                 <li>{{ option.text }}</li>
             </a>
             <li>
-                <Bianco :textWhite="textWhite" class="py-2 px-3 me-1"></Bianco>
-                <Rosa :textPink="textPink" class="py-2 px-3"></Rosa>
-
+                <white-button :textWhite="textWhite" class="py-2 px-3 me-1"></white-button>
+                <pink-button :textPink="textPink" class="py-2 px-3"></pink-button>
             </li>
         </ul>
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 ul {
     list-style-type: none;
 
     a {
-        color: white;
+        color: #fff;
         text-decoration: none;
 
         li {
             padding: 0 15px;
             font-size: 15px;
             cursor: pointer;
-
         }
     }
 }

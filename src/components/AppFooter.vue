@@ -1,23 +1,31 @@
-<script >
-import Info from './macroSezioni/footer/Info.vue'
-import MainF from './macroSezioni/footer/MainF.vue'
-import UltimaParte from './macroSezioni/footer/UltimaParte.vue'
+<script>
+import InfoFooter from './macroSezioni/footer/InfoFooter.vue';
+import MainFooter from './macroSezioni/footer/MainFooter.vue'
+import LastElement from './macroSezioni/footer/UltimaParte.vue';
 export default {
     name: 'AppFooter',
-    components: { Info, MainF, UltimaParte }
+    components: { InfoFooter, MainFooter, LastElement }
 }
 </script>
 
 <template>
     <div class="custom-bgi">
         <div class="container">
-            <info></info>
-            <main-f></main-f>
+            <info-footer></info-footer>
+            <main-footer></main-footer>
         </div>
     </div>
-    <ultima-parte></ultima-parte>
+    <last-element></last-element>
+
+
 </template>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+.custom-bgi {
+    background-image: url('imgs/bg (3).jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+}
 </style>
